@@ -1,0 +1,34 @@
+1)
+La classe point rappresenta un punto del piano cartesiano con coordinate intere:
+
+public class Point{
+    private int x, y;
+    ...
+}
+
+Spiegare quali delle seguenti sono implementazioni valide per il metodo compare(Point a, Point b) di Comparator<Point>
+(Per semplicità, le seguenti pseudo-implementazioni accedono direttamente ai campi privati della classe Point):
+a) return a.x-b.x;
+b) return a.x-b.y;
+c) return ((a.x * a.x) + (a.y * a.y)) - ((b.x * b.x)-(b.y * b.y));
+d) return (a.x - b.x) - (a.y - b.y);
+e) return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
+
+2)
+Implementare la classe Time, che rappresenta un orario della giornata (dalle 00:00:00 alle 23:59:59).
+Gli orari devono essere confrontabili secondo Comparable. Il metodo minus accetta un altro orario x
+come argomento e restituisce la differenza tra questo orario e x, sotto forma di un nuovo oggetto Time.
+La classe fornisce anche gli orari predefiniti MIDDAY e MIDNIGHT.
+
+Esempio d'uso:
+Time t1 = new Time(14,35,0);
+Time t2 = new Time(7,10,30);
+Time t3 = t1.minus(t2);
+System.out.println(t3);
+System.out.println(t3.compareTo(t2));
+System.out.println(t3.compareTo(Time.MIDDAY));
+
+Output dell'esempio d'uso:
+7:24:30
+1
+-1

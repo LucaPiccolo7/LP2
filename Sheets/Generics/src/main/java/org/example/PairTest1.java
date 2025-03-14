@@ -13,6 +13,7 @@ public class PairTest1
         array[2] = 0;
 
         String middle = ArrayAlg.getMedian(words);
-        String middle2 = ArrayAlg.getMedian(array);
+        //String middle2 = ArrayAlg.getMedian(array);
+
     }
 }
