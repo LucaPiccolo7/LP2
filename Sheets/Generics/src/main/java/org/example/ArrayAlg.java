@@ -1,4 +1,4 @@
-package src.main.java.org.example;
+package Generics.src.main.java.org.example;
 
 class ArrayAlg {
     /** * Gets the minimum and maximum of an array of strings.
